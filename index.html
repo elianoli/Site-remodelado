@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Remodelagem do site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <style>
+      .banner-image{
+        background-image: url('img/banner-img.jpg');
+        background-size: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header" class="fixed-top">
+      <!-- Navbar -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+          <div class="container">
+            <a href="#" class="navbar-brand">SITE REFORMULADO</a>
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-bs-target="#navbarHeader"
+              data-bs-toggle="collapse"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle Navbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbarHeader" class="collapse navbar-collapse">
+              <div class="mx-auto"></div>
+              <ul class="navbar-nav">
+                <li class="navbar-item">
+                  <a href="#" class="nav-link text-white">Home</a>
+                </li>
+
+                <li class="navbar-item">
+                  <a href="#" class="nav-link text-white">About</a>
+                </li>
+
+                <li class="navbar-item">
+                  <a href="#" class="nav-link text-white">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+    </header>
+
+    <!-- Intro Section -->
+    <section id="intro" class="d-flex justify-content-center align-items-center">
+      <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+        <div class="content text-center">
+          <h1 class="text-white">SITE REFORMULADO</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="d-flex justify-content-center align-items-center">
+      <div class="container my-5 d-grid gap-5">
+        <div class="p-5 border">
+          <p>
+            Thank you for the video!! Can you please show in a video how to make an owl carousel and also how to overlap pictures? I'd like to overlap images with text but then I do not know how to separate them to make them responsive on mobile. Thanks!
+          </p>
+        </div>
+
+        <div class="p-5 border">
+          <p>
+            Thank you for the video!! Can you please show in a video how to make an owl carousel and also how to overlap pictures? I'd like to overlap images with text but then I do not know how to separate them to make them responsive on mobile. Thanks!
+          </p>
+        </div>
+
+        <div class="p-5 border">
+          <p>
+            Thank you for the video!! Can you please show in a video how to make an owl carousel and also how to overlap pictures? I'd like to overlap images with text but then I do not know how to separate them to make them responsive on mobile. Thanks!
+          </p>
+        </div>
+
+        <div class="p-5 border">
+          <p>
+            Thank you for the video!! Can you please show in a video how to make an owl carousel and also how to overlap pictures? I'd like to overlap images with text but then I do not know how to separate them to make them responsive on mobile. Thanks!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <script>
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function(){
+        if(window.pageYOffset > 100){
+          nav.classList.add('bg-dark', 'shadow')
+        }
+        else{
+          nav.classList.remove('bg-dark', 'shadow')
+        }
+      });
+    </script>
+  </body>
+
+</html>
